@@ -13,24 +13,30 @@ When the user asks to "update AI data" or sync their skills/knowledge, you shoul
 
 ## Execution Steps
 
-1.  **Locate the source and destination:**
-    *   Source (Antigravity Config): `~/.gemini/config/` (or `~/.gemini/antigravity/builtin/skills/` etc. based on the current environment).
-    *   Destination: `/Users/jefferyforbes/Documents/Files/AI-Skills/`
-
-2.  **Synchronize Data:**
-    Use `rsync` or `cp` to copy the directories. Prefer `rsync -av` for efficient synchronization that doesn't overwrite newer files blindly if bidirectional sync is needed, but for a simple backup, `cp -R` or `rsync -av --delete` (if meant to exactly mirror) works.
+1.  **Locate and Synchronize Data:**
+    The skills in Antigravity are spread across various plugin, built-in, and config directories. We need to find all skill namespaces and copy them to `/Users/jefferyforbes/Documents/Files/AI-Skills/skills/`.
     
-    ```bash
-    # Example sync commands (run these in the user's terminal)
-    rsync -av ~/.gemini/config/skills/ /Users/jefferyforbes/Documents/Files/AI-Skills/skills/
-    rsync -av ~/.gemini/config/workflows/ /Users/jefferyforbes/Documents/Files/AI-Skills/workflows/
-    rsync -av ~/.gemini/config/knowledge/ /Users/jefferyforbes/Documents/Files/AI-Skills/knowledge/
-    rsync -av ~/.gemini/config/scripts/ /Users/jefferyforbes/Documents/Files/AI-Skills/scripts/
-    ```
-    *(Note: adjust the source paths if the agent's configuration is stored elsewhere in the `~/.gemini/` directory).*
+    Execute the following script to perform the synchronization. It uses `find` to discover all `SKILL.md` locations and synchronizes them into the destination based on their namespace.
 
-3.  **Git Commit (Optional):**
-    If the `AI-Skills` directory is a git repository (has a `.git` folder), you may optionally offer to commit the changes for the user.
+    ```bash
+    DEST_DIR="/Users/jefferyforbes/Documents/Files/AI-Skills"
+    mkdir -p "$DEST_DIR/skills" "$DEST_DIR/workflows" "$DEST_DIR/knowledge" "$DEST_DIR/scripts"
+
+    # Synchronize Skills
+    find /Users/jefferyforbes/.gemini -name "SKILL.md" 2>/dev/null | while read -r skill_file; do
+        skill_dir=$(dirname "$skill_file")
+        skill_name=$(basename "$skill_dir")
+        rsync -a "$skill_dir/" "$DEST_DIR/skills/$skill_name/"
+    done
+    
+    # Synchronize other data (workflows, knowledge, scripts) if they exist
+    rsync -a ~/.gemini/config/workflows/ "$DEST_DIR/workflows/" 2>/dev/null || true
+    rsync -a ~/.gemini/config/knowledge/ "$DEST_DIR/knowledge/" 2>/dev/null || true
+    rsync -a ~/.gemini/config/scripts/ "$DEST_DIR/scripts/" 2>/dev/null || true
+    ```
+
+2.  **Git Commit (Optional):**
+    If the `AI-Skills` directory is a git repository (has a `.git` folder), you may optionally offer to commit the changes for the user. Note that executing git operations outside the workspace might require `BypassSandbox: true`.
     ```bash
     cd /Users/jefferyforbes/Documents/Files/AI-Skills/
     git add .
@@ -38,5 +44,5 @@ When the user asks to "update AI data" or sync their skills/knowledge, you shoul
     git push
     ```
 
-4.  **Completion:**
+3.  **Completion:**
     Inform the user that the synchronization is complete and summarize any major changes if possible.
