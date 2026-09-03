@@ -14,25 +14,12 @@ When the user asks to "update AI data" or sync their skills/knowledge, you shoul
 ## Execution Steps
 
 1.  **Locate and Synchronize Data:**
-    The skills in Antigravity are spread across various plugin, built-in, and config directories. We need to find all skill namespaces and copy them to `/Users/jefferyforbes/Documents/Files/AI-Skills/skills/`.
+    The skills in Antigravity are spread across various plugin, built-in, and config directories.
     
-    Execute the following script to perform the synchronization. It uses `find` to discover all `SKILL.md` locations and synchronizes them into the destination based on their namespace.
+    Execute the global sync script to perform the synchronization. It uses `find` to discover all `SKILL.md` locations and synchronizes them, along with other AI data, into the destination based on their namespace.
 
     ```bash
-    DEST_DIR="/Users/jefferyforbes/Documents/Files/AI-Skills"
-    mkdir -p "$DEST_DIR/skills" "$DEST_DIR/workflows" "$DEST_DIR/knowledge" "$DEST_DIR/scripts"
-
-    # Synchronize Skills
-    find /Users/jefferyforbes/.gemini -name "SKILL.md" 2>/dev/null | while read -r skill_file; do
-        skill_dir=$(dirname "$skill_file")
-        skill_name=$(basename "$skill_dir")
-        rsync -a "$skill_dir/" "$DEST_DIR/skills/$skill_name/"
-    done
-    
-    # Synchronize other data (workflows, knowledge, scripts) if they exist
-    rsync -a ~/.gemini/config/workflows/ "$DEST_DIR/workflows/" 2>/dev/null || true
-    rsync -a ~/.gemini/config/knowledge/ "$DEST_DIR/knowledge/" 2>/dev/null || true
-    rsync -a ~/.gemini/config/scripts/ "$DEST_DIR/scripts/" 2>/dev/null || true
+    ~/.gemini/config/scripts/sync_ai_data.sh
     ```
 
 2.  **Git Commit (Optional):**
