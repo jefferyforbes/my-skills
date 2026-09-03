@@ -5,473 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d4b0fd8-81d5-4de4-b1ab-a6885c15f818" name="Changes" comment="Update skills">
-      <change afterPath="$PROJECT_DIR$/knowledge/architecture-decisions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/knowledge/development-workflow.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/air-llm-skill/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/air-llm-skill/scripts/api_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/air-llm-skill/scripts/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/air-llm-skill/scripts/install_env.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-architecture/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-cli/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-cli/references/interact.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-cli/references/journeys.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-coroutines/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-data-layer/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/app_launcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/build_and_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/emu_health_check.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/emu_health_check.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/emulator_manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/gesture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/keyboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/log_monitor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/navigator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-emulator-skill/scripts/screen_mapper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-gradle-logic/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-retrofit/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-testing/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/android-viewmodel/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/data/detection-recipes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/data/regulatory-deadlines.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/data/rejection-patterns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/ADVANCED-2026.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/AI-POLICY-MIGRATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/ANDROID-POLICY-MIGRATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/APPLE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/BY-APP-TYPE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/COMPETITIVE-GAP-ANALYSIS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/CREDITS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/CROSS-PLATFORM-FRAMEWORKS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/EU-REGULATORY-2026.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/GAMBLING-MATRIX.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/GLOBAL-REGULATORY-2026.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/GOOGLE-PLAY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/MISTAKE-PATTERNS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/MOBILE-PRIVACY-MONITOR-2026.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/MOBILE-SECURITY-2026.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/OPEN-SOURCE-PATTERNS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/OTHER-STORES.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/PLATFORM-MECHANICS-2026.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/PRE-SUBMISSION-CHECKLIST.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/PRIVACY-POLICY-MIGRATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/REGULATORY-GAP-REPORT-2026.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/REGULATORY-TIMELINE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/docs/SECURITY-POLICY-MIGRATION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/ai-and-generative-apps.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/crypto-finance-and-trading.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/games.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/health-fitness-and-medical.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/kids-category-and-families.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/macos-and-the-mac-app-store.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/social-and-user-generated-content.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/subscriptions-and-in-app-purchase.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/universal-every-app.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/guidelines/by-app-type/vpn-and-networking.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/android.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/design.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/entitlements.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/export.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/metadata.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/payments.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/performance.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/privacy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/references/rules/safety.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/accessibility-audit-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/accessibility-audit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/deadline-checker-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/deadline-checker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/generate-references.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/generate-timeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/metadata-audit-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/metadata-audit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-ai-policy-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-ai-policy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-android-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-android.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-privacy-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-privacy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-regulatory-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-regulatory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-security-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/monitor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/pull-metadata.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/release-audit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/test-deadline-checker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/test-generate-timeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/validate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/verify-citations-test.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/scripts/verify-citations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/app-store-compliance/templates/REVIEW-NOTES-TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/architecture/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/cleanup/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/code-context/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/code-path-cleanup/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/code-review/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/coil-compose/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/compose-ui/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/debugging/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/implementation-plan/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/item-behavior.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/container-properties.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/get-started.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/item-properties.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/mediaquery/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/develop/ui/compose/tooling/debug.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/adaptive/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/analysis-of-the-project-and-layout.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/designsystems/migrate-xml-theme-to-compose.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/migrate/interoperability-apis/compose-in-views.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/migrate/interoperability-apis/views-in-compose.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/setup-compose-dependencies-and-compiler.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/identify-optimal-xml-candidate.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/xml-layout-migration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/theming/styles/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/theming/styles/references/android/develop/ui/compose/designsystems/custom.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/fundamentals.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/state-animations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/theming.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/kotlin-concurrency-expert/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/learning/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/media3-cast-integration/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/media3-cast-integration/references/android/media/media3/cast/create-castplayer.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/media3-cast-integration/references/android/media/media3/cast/customize-castoptions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/media3-cast-integration/references/android/media/media3/cast/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/animations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basic.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicdsl.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicsaveable.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/bottomsheet.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/common-ui.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional-transitions.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-custommatcher.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-staticuri.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-uriarguments.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/dialog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/lifecycle-owner.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-supportingpane.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-hilt.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-koin.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/multiple-backstacks.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/passingarguments.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-event.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-state.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/navigation-3/references/android/guide/navigation/type-safe-destinations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/observability/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/refactoring/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/requirements-analysis/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/security/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/testing-setup/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/testing-setup/references/android/studio/preview/compose-screenshot-testing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/testing-setup/references/android/training/dependency-injection/hilt-testing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/testing/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/android/training/wearables/compose/migrate-to-material3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/AmbientModeSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/CurvedWorldSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/ExpandableSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/HierarchicalFocusSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/PagerSamples.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/RotarySamples.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/ScalingLazyColumnSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/SwipeToDismissBoxSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/SwipeToRevealSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/foundation/TransformingLazyColumnSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/AlertDialogSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/AnimatedTextSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ButtonGroupSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/CardSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/CheckboxButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ConfirmationDialogSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/CurvedTextSamples.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/DatePickerSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/DynamicColorSchemeSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/EdgeButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/FadingExpandingLabelSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/IconButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/IconToggleButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/LevelIndicatorSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/LinearProgressIndicatorSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ListHeaderSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/OneHandedGestureSamples.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/OpenOnPhoneDialogSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/PageIndicatorSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/PagerScaffoldSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/PickerGroupSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/PickerSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/PlaceholderSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ProgressIndicatorSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/RadioButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ScaffoldSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ScrollAwaySample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/ScrollIndicatorSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/SliderSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/StepperSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/SurfaceTransformationSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/SwipeToDismissBoxSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/SwipeToRevealSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/SwitchButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/TextButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/TextToggleButtonSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/TimePickerSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/TimeTextSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/TransformationSpecSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/TransformingLazyColumnNotificationsSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/wear-compose-m3/references/material3/TransformingLazyColumnSample.kt.md.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workflows/bug-fixing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workflows/feature-development.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-architecture/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-cli/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-cli/references/interact.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-cli/references/journeys.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-coroutines/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-data-layer/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/app_launcher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/build_and_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/emu_health_check.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/emu_health_check.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/emulator_manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/gesture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/keyboard.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/log_monitor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/navigator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-emulator-skill/scripts/screen_mapper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-gradle-logic/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-retrofit/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-testing/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android-viewmodel/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/data/detection-recipes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/data/regulatory-deadlines.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/data/rejection-patterns.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/ADVANCED-2026.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/AI-POLICY-MIGRATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/ANDROID-POLICY-MIGRATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/APPLE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/BY-APP-TYPE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/COMPETITIVE-GAP-ANALYSIS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/CREDITS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/CROSS-PLATFORM-FRAMEWORKS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/EU-REGULATORY-2026.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/GAMBLING-MATRIX.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/GLOBAL-REGULATORY-2026.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/GOOGLE-PLAY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/MISTAKE-PATTERNS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/MOBILE-PRIVACY-MONITOR-2026.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/MOBILE-SECURITY-2026.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/OPEN-SOURCE-PATTERNS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/OTHER-STORES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/PLATFORM-MECHANICS-2026.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/PRE-SUBMISSION-CHECKLIST.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/PRIVACY-POLICY-MIGRATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/REGULATORY-GAP-REPORT-2026.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/REGULATORY-TIMELINE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/docs/SECURITY-POLICY-MIGRATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/ai-and-generative-apps.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/crypto-finance-and-trading.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/games.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/health-fitness-and-medical.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/kids-category-and-families.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/macos-and-the-mac-app-store.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/social-and-user-generated-content.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/subscriptions-and-in-app-purchase.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/universal-every-app.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/guidelines/by-app-type/vpn-and-networking.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/android.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/design.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/entitlements.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/export.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/metadata.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/payments.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/performance.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/privacy.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/references/rules/safety.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/accessibility-audit-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/accessibility-audit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/deadline-checker-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/deadline-checker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/generate-references.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/generate-timeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/metadata-audit-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/metadata-audit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-ai-policy-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-ai-policy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-android-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-android.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-privacy-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-privacy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-regulatory-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-regulatory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-security-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-security.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/monitor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/pull-metadata.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/release-audit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/test-deadline-checker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/test-generate-timeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/validate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/verify-citations-test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/scripts/verify-citations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-store-compliance/templates/REVIEW-NOTES-TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/architecture/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-context/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-review/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coil-compose/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose-ui/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debugging/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/implementation-plan/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/container-behavior.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/get-started.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/flexbox/item-behavior.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/container-properties.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/get-started.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/grid/item-properties.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/layouts/adaptive/mediaquery/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/develop/ui/compose/tooling/debug.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/adaptive/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/analysis-of-the-project-and-layout.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/designsystems/migrate-xml-theme-to-compose.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/migrate/interoperability-apis/compose-in-views.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/migrate/interoperability-apis/views-in-compose.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/setup-compose-dependencies-and-compiler.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/identify-optimal-xml-candidate.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/migration/migrate-xml-views-to-jetpack-compose/references/xml-layout-migration.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/theming/styles/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/theming/styles/references/android/develop/ui/compose/designsystems/custom.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/fundamentals.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/state-animations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/styles-vs-modifiers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jetpack-compose/theming/styles/references/android/develop/ui/compose/styles/theming.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin-concurrency-expert/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/learning/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media3-cast-integration/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media3-cast-integration/references/android/media/media3/cast/create-castplayer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media3-cast-integration/references/android/media/media3/cast/customize-castoptions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media3-cast-integration/references/android/media/media3/cast/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/animations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/basic.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicdsl.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/basicsaveable.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/bottomsheet.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/common-ui.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional-transitions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/conditional.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-custommatcher.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-staticuri.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-uriarguments.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/dialog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/lifecycle-owner.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-listdetail.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/material-supportingpane.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-hilt.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/modular-koin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/multiple-backstacks.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/passingarguments.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-event.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/results-state.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation-3/references/android/guide/navigation/type-safe-destinations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/observability/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements-analysis/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-setup/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-setup/references/android/develop/ui/compose/testing/common-patterns.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-setup/references/android/studio/preview/compose-screenshot-testing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing-setup/references/android/training/dependency-injection/hilt-testing.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/SKILL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/android/training/wearables/compose/migrate-to-material3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/AmbientModeSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/CurvedWorldSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/ExpandableSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/HierarchicalFocusSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/PagerSamples.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/RotarySamples.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/ScalingLazyColumnSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/SwipeToDismissBoxSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/SwipeToRevealSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/foundation/TransformingLazyColumnSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/AlertDialogSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/AnimatedTextSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ButtonGroupSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/CardSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/CheckboxButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ConfirmationDialogSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/CurvedTextSamples.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/DatePickerSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/DynamicColorSchemeSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/EdgeButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/FadingExpandingLabelSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/IconButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/IconToggleButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/LevelIndicatorSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/LinearProgressIndicatorSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ListHeaderSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/OneHandedGestureSamples.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/OpenOnPhoneDialogSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/PageIndicatorSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/PagerScaffoldSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/PickerGroupSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/PickerSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/PlaceholderSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ProgressIndicatorSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/RadioButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ScaffoldSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ScrollAwaySample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/ScrollIndicatorSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/SliderSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/StepperSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/SurfaceTransformationSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/SwipeToDismissBoxSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/SwipeToRevealSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/SwitchButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/TextButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/TextToggleButtonSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/TimePickerSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/TimeTextSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/TransformationSpecSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/TransformingLazyColumnNotificationsSample.kt.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wear-compose-m3/references/material3/TransformingLazyColumnSample.kt.md.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -494,33 +29,33 @@
     </assistant-settings>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="226" />
+    <option name="cachedIndexableFilesCount" value="247" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jefferyforbes"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jefferyforbes&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jefferyforbes/Skills",
-    "accountId": "9bc188a3-ffd2-4c0c-b507-30e5e51e0492"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jefferyforbes/Skills&quot;,
+    &quot;accountId&quot;: &quot;9bc188a3-ffd2-4c0c-b507-30e5e51e0492&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3IjPsLf3Tj6jlBpEikUUzrKQnrp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -537,7 +72,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/jefferyforbes/.gemini/config/skills",
+    "last_opened_file_path": "/Users/jefferyforbes/Documents/Files/AI-Skills",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -546,6 +81,14 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6d4b0fd8-81d5-4de4-b1ab-a6885c15f818" name="Changes" comment="" />
@@ -570,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788291656542</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update skills">
+      <option name="closed" value="true" />
+      <created>1788311347414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788311347414</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
