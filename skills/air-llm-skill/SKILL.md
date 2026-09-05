@@ -23,7 +23,7 @@ Run the bundled script to create a virtual environment and install all necessary
 
 ```bash
 chmod +x ~/.gemini/config/skills/air-llm-skill/scripts/install_env.sh
-./~/.gemini/config/skills/air-llm-skill/scripts/install_env.sh
+bash ~/.gemini/config/skills/air-llm-skill/scripts/install_env.sh
 ```
 
 ### Option B: Manual Installation
@@ -173,3 +173,10 @@ python3 ~/.gemini/config/skills/air-llm-skill/scripts/client.py --prompt "Explai
    - Always initialize tokenizer with `padding=False` or assign `tokenizer.pad_token = tokenizer.eos_token`.
 4. **Gated models (401 Client Error)**:
    - Provide `--hf-token <YOUR_TOKEN>` or set `export HF_TOKEN=...`.
+
+
+---
+
+## Deep Reference Documentation
+
+- **[AirLLM Architecture & Layer-Wise Reference](./references/air-llm-expert.md)**: Deep technical breakdown of layer-wise memory swapping, prefetching, and MLX quantization.

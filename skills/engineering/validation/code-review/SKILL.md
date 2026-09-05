@@ -5,6 +5,28 @@ description: Review code for correctness, maintainability, architecture, securit
 
 # Code Review
 
+# Operating Contract
+
+This review operates under the root `AGENTS.md`.
+
+Review for meaningful risk, not personal preference. Findings should be grounded in repository evidence and should distinguish observed facts from inference.
+
+Review should prioritise:
+
+1. Correctness
+2. Data integrity
+3. Security
+4. Concurrency / lifecycle safety
+5. Regression risk
+6. Architecture
+7. Maintainability
+8. Performance
+9. Testability
+10. Style
+
+Do not recommend changes solely because another implementation is aesthetically preferable.
+
+
 ## Purpose
 
 Evaluate code based on how well it solves the actual problem within the context of the existing software system.

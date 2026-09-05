@@ -26,4 +26,4 @@ Provide authoritative guidance for designing, implementing, and migrating Wear O
 
 # Component Guidance & Reference Samples
 
-For detailed component sample mappings, migration checklists, and `TransformingLazyColumn` reference implementations, see [references/components.md](file:///Users/jefferyforbes/.gemini/config/skills/wear-compose-m3/references/components.md).
+For detailed component sample mappings, migration checklists, and `TransformingLazyColumn` reference implementations, see [references/components.md](./references/components.md).

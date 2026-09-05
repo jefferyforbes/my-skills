@@ -5,6 +5,23 @@ description: Determine and implement the appropriate testing strategy for code c
 
 # Testing
 
+# Operating Contract
+
+This skill operates under the root `AGENTS.md`.
+
+Its responsibility is to determine and implement the smallest appropriate testing strategy that provides meaningful evidence of behaviour.
+
+It must:
+
+- test behaviour rather than implementation details;
+- use evidence to choose test levels;
+- avoid adding tests, dependencies, mocks, or infrastructure without a demonstrated need;
+- verify that tests would actually fail for the regression or incorrect behaviour they are intended to protect;
+- use runtime/visual verification when automated tests cannot establish the relevant behaviour.
+
+Do not treat coverage percentage, test count, or a passing build as a substitute for behavioural confidence.
+
+
 ## Purpose
 
 Create tests that protect **important behaviour**, not tests that merely increase test count or code coverage.
@@ -239,6 +256,17 @@ Tests should not unnecessarily prevent reasonable refactoring.
 ---
 
 # Test Naming
+
+## Test Naming as a Behavioural Contract
+
+Test names are part of the behavioural contract.
+
+A test name should communicate enough context to answer:
+
+> What behaviour is protected, under what meaningful condition, and what outcome is expected?
+
+If a test cannot be named clearly, consider whether the behaviour, responsibility, or scope being tested is unclear.
+
 
 Test names must be **self-explanatory and describe the behaviour or functionality being verified**.
 

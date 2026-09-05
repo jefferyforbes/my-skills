@@ -1,13 +1,27 @@
 ---
 name: android
-description: Expert guidance on setting up and maintaining a modern Android application architecture using Clean Architecture and Hilt. Use this when asked about project structure, module setup, or dependency injection. Refer to koog-agent-framework skill when integrating Koog AI agents.
+description: Modern Android engineering, architecture, and routing hub. Use when designing, implementing, or debugging Android applications, including Clean Architecture, Jetpack Compose UI, Navigation 3, Wear OS Material3, ViewModels, Coroutines, testing setup, data layer, Gradle build logic, and Koog AI agent integration.
 ---
 
 # Android Modern Architecture & Modularization
 
+## Operating Contract
+
+This skill operates under the root `AGENTS.md`.
+
+Use Android architecture guidance as a set of strong defaults, not an excuse to retrofit every project into an idealised architecture.
+
+Before changing architecture:
+
+- inspect the existing project structure;
+- identify the current conventions;
+- determine whether the requested change actually requires architectural change;
+- preserve simpler existing patterns when they are sufficient;
+- introduce additional layers only when they provide meaningful value.
+
 ## Instructions
 
-When designing or refactoring an Android application, adhere to the **Guide to App Architecture** and **Clean Architecture** principles.
+When designing or refactoring an Android application, prefer modern Android architecture and clear separation of responsibilities where appropriate.
 
 ### 1. High-Level Layers
 Structure the application into three primary layers. Dependencies must strictly flow **inwards** (or downwards) to the core logic.
@@ -26,8 +40,13 @@ Structure the application into three primary layers. Dependencies must strictly 
     *   **Components**: Repositories (implementations), Data Sources (Retrofit APIs, Room DAOs, Koog AI Agents).
     *   **Dependencies**: Depends only on external sources and libraries.
 
-### 2. Dependency Injection with Hilt
-Use **Hilt** for all dependency injection.
+### 2. Dependency Injection
+
+Prefer the dependency injection framework already used by the project.
+
+Do not introduce Hilt solely because this skill recommends it.
+
+If the project has no DI framework, choose one based on project size, platform constraints, existing dependencies, and the actual testing/composition requirements. For small applications, direct construction may be preferable.
 
 *   **@HiltAndroidApp**: Annotate the `Application` class.
 *   **@AndroidEntryPoint**: Annotate Activities and Fragments.
@@ -59,25 +78,25 @@ For production apps, use a multi-module strategy to improve build times and sepa
 Use `view_file` to read these deep-dive reference guides when executing specific Android tasks.
 
 ## UI Layer
-- **Compose UI**: `~/.gemini/config/skills/android/references/ui/compose-ui/SKILL.md`
-- **Navigation 3**: `~/.gemini/config/skills/android/references/ui/navigation-3/SKILL.md`
-- **Wear Compose (M3)**: `~/.gemini/config/skills/android/references/ui/wear-compose-m3/SKILL.md`
-- **Media3 Cast Integration**: `~/.gemini/config/skills/android/references/ui/media3-cast-integration/SKILL.md`
-- **Coil Compose**: `~/.gemini/config/skills/android/references/ui/coil-compose/SKILL.md`
+- **[Compose UI](./references/ui/compose-ui/SKILL.md)**: Compose UI patterns, state hoisting, and performance guidelines.
+- **[Navigation 3](./references/ui/navigation-3/SKILL.md)**: Jetpack Navigation 3 migration, recipes, type-safe destinations, and scenes.
+- **[Wear Compose (M3)](./references/ui/wear-compose-m3/SKILL.md)**: Wear OS Material3 components, Scaffold, and TransformingLazyColumn.
+- **[Media3 Cast Integration](./references/ui/media3-cast-integration/SKILL.md)**: Media3 playback, Session, and Cast framework wiring.
+- **[Coil Compose](./references/ui/coil-compose/SKILL.md)**: Async image loading with Coil in Compose.
 
 ## Async & State
-- **Android ViewModels**: `~/.gemini/config/skills/android/references/async/android-viewmodel/SKILL.md`
-- **Android Coroutines**: `~/.gemini/config/skills/android/references/async/android-coroutines/SKILL.md`
+- **[Android ViewModels](./references/async/android-viewmodel/SKILL.md)**: Lifecycle-aware ViewModels, StateFlow, and SavedStateHandle.
+- **[Android Coroutines](./references/async/android-coroutines/SKILL.md)**: Coroutines best practices, Dispatchers, and structured concurrency.
 
 ## Testing
-- **Android Testing Setup**: `~/.gemini/config/skills/android/references/testing/testing-setup/SKILL.md`
-- **Android Testing Guide**: `~/.gemini/config/skills/android/references/testing/android-testing/SKILL.md`
-- **Screenshot Debugging Workflow**: `~/.gemini/config/skills/android/references/testing/screenshot-debugging-workflow/SKILL.md`
+- **[Android Testing Setup](./references/testing/testing-setup/SKILL.md)**: Minimum test harness setup, JUnit4/5, MockK, and Robolectric.
+- **[Android Testing Guide](./references/testing/android-testing/SKILL.md)**: Unit, integration, and UI testing patterns.
+- **[Screenshot Debugging Workflow](./references/testing/screenshot-debugging-workflow/SKILL.md)**: Screenshot test failure diagnosis and visual diff verification.
 
 ## Data Layer & Build
-- **Data Layer Architecture**: `~/.gemini/config/skills/android/references/data/android-data-layer/SKILL.md`
-- **Retrofit Configuration**: `~/.gemini/config/skills/android/references/data/android-retrofit/SKILL.md`
-- **Android Gradle Logic**: `~/.gemini/config/skills/android/references/build/android-gradle-logic/SKILL.md`
+- **[Data Layer Architecture](./references/data/android-data-layer/SKILL.md)**: Repository pattern, offline-first caching, and Koog agent isolation.
+- **[Retrofit Configuration](./references/data/android-retrofit/SKILL.md)**: Network data sources, interceptors, and OkHttp client setup.
+- **[Android Gradle Logic](./references/build/android-gradle-logic/SKILL.md)**: Convention plugins, build-logic, and dependency catalogs.
 
 ## CLI & Emulators
 - **Android CLI & Emulator Controls**: Refer to the global `android-cli` skill.

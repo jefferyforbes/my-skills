@@ -88,7 +88,7 @@ Route by user intent *before* running preflight checks. The preflight ceremony b
 - Signup is the flow most likely to hit the device-code wait (brand-new users in sandboxed/headless agent environments). Follow [Device-code sign-in: relay the link immediately](#account-creation--sign-in) — a signup lost to an expired code is a lost user, not a retry.
 
 **Sandbox / remote-build intent** ("give me a sandbox", "spin up a scratch environment", "build this remotely", "run this remotely", "checkpoint/snapshot the sandbox", "save this sandbox state", "restore my sandbox"):
-- Load [sandbox.md](references/sandbox.md) and follow it. Sandboxes require the feature to be enabled in Priority Boarding — if a sandbox command fails with a feature-availability error, prompt the user to enable Sandboxes in Priority Boarding rather than retrying.
+- Load [sandbox.md](./sandbox.md) and follow it. Sandboxes require the feature to be enabled in Priority Boarding — if a sandbox command fails with a feature-availability error, prompt the user to enable Sandboxes in Priority Boarding rather than retrying.
 
 **Other intents** (querying state, listing projects, configuring variables, debugging failures):
 - Follow the Preflight section below.
@@ -276,15 +276,15 @@ For anything beyond quick operations, load the reference that matches the user's
 
 | Intent | Reference | Use for |
 |---|---|---|
-| **Analyze a database** ("analyze \<url\>", "analyze db", "analyze database", "analyze service", "introspect", "check my postgres/redis/mysql/mongo") | [analyze-db.md](references/analyze-db.md) | Database introspection and performance analysis. analyze-db.md directs you to the DB-specific reference. **This takes priority over the status/operate routes when a Railway URL to a database service is provided alongside "analyze".** |
-| Create or connect resources | [setup.md](references/setup.md) | Projects, services, databases, buckets, templates, workspaces |
-| Ship code or manage releases | [deploy.md](references/deploy.md) | Deploy, redeploy, restart, build config, monorepo, Dockerfile |
-| Change configuration | [configure.md](references/configure.md) | Environments, variables, config patches, domains, networking |
-| Manage feature flags | [feature-flags.md](references/feature-flags.md) | List/create/update project flags via MCP; workspace flags read-only; SDK runtime reads |
-| Define configuration in source control ("IaC", "infrastructure as code", "config as code", `.railway/railway.ts`, `railway.json`, "config plan/apply/pull") | [iac.md](references/iac.md) | Choose TypeScript IaC or the `railway.json` fallback, then author, import, plan, apply, or check drift safely |
-| Check health or debug failures | [operate.md](references/operate.md) | Status, logs, metrics, build/runtime triage, recovery |
-| Use a sandbox or build remotely ("sandbox", "scratch environment", "ephemeral box", "build remotely", "remote build", "run this remotely", "checkpoint", "snapshot/save/restore sandbox state") | [sandbox.md](references/sandbox.md) | Create/fork sandboxes, run commands remotely, remote template builds, checkpoints (save/restore sandbox state), port forwarding, teardown. Requires Sandboxes enabled in Priority Boarding — if unavailable, prompt the user to enable it. |
-| Request from API, docs, or community | [request.md](references/request.md) | Railway GraphQL API queries/mutations, metrics queries, Central Station, official docs |
+| **Analyze a database** ("analyze \<url\>", "analyze db", "analyze database", "analyze service", "introspect", "check my postgres/redis/mysql/mongo") | [analyze-db.md](./analyze-db.md) | Database introspection and performance analysis. analyze-db.md directs you to the DB-specific reference. **This takes priority over the status/operate routes when a Railway URL to a database service is provided alongside "analyze".** |
+| Create or connect resources | [setup.md](./setup.md) | Projects, services, databases, buckets, templates, workspaces |
+| Ship code or manage releases | [deploy.md](./deploy.md) | Deploy, redeploy, restart, build config, monorepo, Dockerfile |
+| Change configuration | [configure.md](./configure.md) | Environments, variables, config patches, domains, networking |
+| Manage feature flags | [feature-flags.md](./feature-flags.md) | List/create/update project flags via MCP; workspace flags read-only; SDK runtime reads |
+| Define configuration in source control ("IaC", "infrastructure as code", "config as code", `.railway/railway.ts`, `railway.json`, "config plan/apply/pull") | [iac.md](./iac.md) | Choose TypeScript IaC or the `railway.json` fallback, then author, import, plan, apply, or check drift safely |
+| Check health or debug failures | [operate.md](./operate.md) | Status, logs, metrics, build/runtime triage, recovery |
+| Use a sandbox or build remotely ("sandbox", "scratch environment", "ephemeral box", "build remotely", "remote build", "run this remotely", "checkpoint", "snapshot/save/restore sandbox state") | [sandbox.md](./sandbox.md) | Create/fork sandboxes, run commands remotely, remote template builds, checkpoints (save/restore sandbox state), port forwarding, teardown. Requires Sandboxes enabled in Priority Boarding — if unavailable, prompt the user to enable it. |
+| Request from API, docs, or community | [request.md](./request.md) | Railway GraphQL API queries/mutations, metrics queries, Central Station, official docs |
 
 If the request spans two areas (for example, "deploy and then check if it's healthy"), load both references and compose one response.
 
@@ -298,7 +298,7 @@ If the request spans two areas (for example, "deploy and then check if it's heal
 6. Resolve context before mutation. Know which project, environment, and service you're acting on.
 7. For destructive actions (delete service, remove deployment, drop database), confirm intent and state impact before executing.
 8. After mutations, verify the result with a read-back command or MCP read.
-9. **Never report a deploy as successful without observing a terminal SUCCESS.** `railway up --detach` returning (it prints "Build queued") and a streaming `railway up` cut off by a shell timeout only confirm the build *started*. Poll `railway deployment list --json` with the same `--project`, `--environment`, and `--service` scope used for the deploy until the newest deployment's `status` is `SUCCESS` (report deployed). If status is `FAILED` or `CRASHED`, triage per [operate.md](references/operate.md). If status is `NEEDS_APPROVAL`, `SLEEPING`, `SKIPPED`, `REMOVED`, `REMOVING`, or an unknown value, report the exact state and next action; do not claim success. A streaming `up` that exits on its own is authoritative: exit 0 = deployed, exit 1 = failed.
+9. **Never report a deploy as successful without observing a terminal SUCCESS.** `railway up --detach` returning (it prints "Build queued") and a streaming `railway up` cut off by a shell timeout only confirm the build *started*. Poll `railway deployment list --json` with the same `--project`, `--environment`, and `--service` scope used for the deploy until the newest deployment's `status` is `SUCCESS` (report deployed). If status is `FAILED` or `CRASHED`, triage per [operate.md](./operate.md). If status is `NEEDS_APPROVAL`, `SLEEPING`, `SKIPPED`, `REMOVED`, `REMOVING`, or an unknown value, report the exact state and next action; do not claim success. A streaming `up` that exits on its own is authoritative: exit 0 = deployed, exit 1 = failed.
 
 ## User-only commands (NEVER execute directly)
 

@@ -60,8 +60,7 @@ Other frameworks use other mechanisms, consult their documentation.
 
 Unless otherwise specified, respect the current stack of testing frameworks.
 
-If there are no testing frameworks, and the user didn't specify any preference,
-install the following:
+If there are no testing frameworks, first determine the minimum infrastructure required for the requested verification. Do not install every framework listed below by default.
 
 - JUnit4 for local and instrumented tests
 - Jacoco for test coverage

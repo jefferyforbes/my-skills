@@ -298,4 +298,4 @@ Do not use slots merely because they are available.
 
 # Detailed UI Templates & Examples
 
-For comprehensive code templates, layout patterns, preview configurations, and Compose UI test snippets, see [references/examples.md](file:///Users/jefferyforbes/.gemini/config/skills/compose-ui/references/examples.md).
+For comprehensive code templates, layout patterns, preview configurations, and Compose UI test snippets, see [references/examples.md](./references/examples.md).

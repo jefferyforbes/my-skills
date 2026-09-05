@@ -11,12 +11,22 @@ When working on software that uses or integrates **JetBrains Koog** (`ai.koog:ko
 
 ---
 
+## Operating Contract
+
+This skill operates under the root `AGENTS.md`.
+
+When integrating Koog:
+
+- inspect the project's existing Kotlin, JDK, Gradle, and dependency versions first;
+- prefer versions already established by the project when compatible;
+- verify current Koog APIs and version requirements from authoritative documentation when the exact version matters;
+- do not upgrade the toolchain merely because a newer version is available.
+
 ## 1. Environment & Setup
 
 ### Prerequisites
-* **JDK:** 17 or higher (JDK 21 recommended for modern concurrency and virtual threads).
-* **Kotlin:** 2.2.0+ (2.3.10+ recommended).
-* **Build System:** Gradle 8.0+ (Kotlin DSL preferred) or Maven 3.8+.
+
+Use the project's existing toolchain where possible. Confirm the minimum versions required by the specific Koog version being used before changing the build environment.
 
 ### Dependencies Configuration
 Ensure `mavenCentral()` is defined in your repository configuration.
@@ -29,10 +39,10 @@ repositories {
 
 dependencies {
     // Core Koog Agents library
-    implementation("ai.koog:koog-agents:1.2.0")
+    implementation("ai.koog:koog-agents:<project-approved-version>")
     
     // Optional extensions / beta functionality
-    implementation("ai.koog:koog-agents-additions:1.2.0-beta")
+    implementation("ai.koog:koog-agents-additions:<project-approved-version>")
 }
 ```
 
