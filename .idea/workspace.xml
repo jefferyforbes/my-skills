@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4b0fd8-81d5-4de4-b1ab-a6885c15f818" name="Changes" comment="Update skills" />
+    <list default="true" id="6d4b0fd8-81d5-4de4-b1ab-a6885c15f818" name="Changes" comment="Update skills">
+      <change beforePath="$PROJECT_DIR$/skills/maintenance/skill-cultivation/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/maintenance/skill-cultivation/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/maintenance/skill-cultivation/references/cultivation-guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/maintenance/skill-cultivation/references/cultivation-guide.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/principles/learning/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/principles/learning/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/skill-cultivation/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/skill-cultivation/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skills/skill-cultivation/references/cultivation-guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/skill-cultivation/references/cultivation-guide.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

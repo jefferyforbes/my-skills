@@ -1,6 +1,6 @@
 # Skill Cultivation & Pattern Mining Guide
 
-This reference provides detailed instructions for querying the interaction ledger, clustering session topics, and evaluating candidate skill viability.
+This reference provides detailed instructions for querying the interaction ledger, clustering session topics, evaluating candidate skill viability, and conducting external frontier research with Firecrawl.
 
 ---
 
@@ -26,7 +26,18 @@ print(f'Total Sessions: {len(records)}')
 
 ---
 
-## 2. Viability Evaluation Scoring
+## 2. External Frontier Research with Firecrawl
+
+When internal interaction artifacts are sparse or when exploring emergent engineering patterns, cultivate new skills and improve existing architectures by leveraging **Firecrawl** (see [`firecrawl`](../../../firecrawl/SKILL.md)):
+
+1. **Academic & Engineering Papers**: Use `firecrawl research search-papers "<topic>"` to discover peer-reviewed agent architectures, context compression methods, or eval frameworks.
+2. **Open-Source Agent Frameworks**: Use `firecrawl research search-github "<query>"` to inspect issues, PRs, and implementations across frontier agent libraries.
+3. **Official Documentation & Technical Specs**: Use `firecrawl search` and `firecrawl scrape` to extract clean markdown from upstream framework documentation.
+4. **Change Tracking on Specifications**: Use `firecrawl monitor create` to track evolving SDKs or library documentation for breaking changes.
+
+---
+
+## 3. Viability Evaluation Scoring
 
 Before proposing a candidate skill, score it against the **Toil vs. Frequency Matrix**:
 

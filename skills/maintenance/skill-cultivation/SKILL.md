@@ -1,6 +1,6 @@
 ---
 name: skill-cultivation
-description: Discovers, analyzes, and synthesizes new candidate skills by mining residual session artifacts, interaction transcripts, user corrections, and recurring workflows.
+description: Discovers, analyzes, and synthesizes new candidate skills by mining residual session artifacts, interaction transcripts, user corrections, recurring workflows, and frontier research via Firecrawl.
 ---
 
 # Skill Cultivation & Pattern Mining
@@ -11,7 +11,9 @@ description: Discovers, analyzes, and synthesizes new candidate skills by mining
 
 $$\mathbf{skill\text{-}cultivation} \longrightarrow \text{agent-audit} \longrightarrow \text{agent-testing} \longrightarrow \text{adopt}$$
 
-While `agent-audit` inspects existing skills for duplication and decay, `skill-cultivation` looks backward across **residual artifacts** (session transcripts, implementation plans, walkthroughs, generated code, and developer corrections) to identify repeated patterns and synthesize new, high-value, reusable skills adhering to the **Core Skill Triad** (Well-Connected, Thorough, Precise).
+While `agent-audit` inspects existing skills for duplication and decay, `skill-cultivation` discovers reusable improvements by:
+1. **Mining Internal Residual Artifacts**: Inspecting past session transcripts, implementation plans, walkthroughs, and developer corrections.
+2. **Conducting External Frontier Research**: Querying scientific research papers, GitHub repositories, and upstream technical documentation via Firecrawl.
 
 ---
 
@@ -20,6 +22,7 @@ While `agent-audit` inspects existing skills for duplication and decay, `skill-c
 ```text
 ┌─────────────────────────────────┐
 │ 1. Harvest Residual Artifacts   │  Inspect session logs, brain artifacts, user prompts
+│    & Frontier Research          │  Query papers, GitHub, and upstream docs via Firecrawl
 └────────────────┬────────────────┘
                  │
                  ▼
@@ -45,31 +48,31 @@ While `agent-audit` inspects existing skills for duplication and decay, `skill-c
 
 ---
 
-## 1. Harvesting Residual Artifacts
+## 1. Harvesting Residual Artifacts & Research
 
+### Internal Session Harvesting
 Antigravity creates durable session records under `~/.gemini/antigravity/brain/<session-id>/`:
-- **Transcripts (`transcript.jsonl`)**: Chronological history of user requests, model reasoning, and tool calls.
-- **Architectural Artifacts**: `implementation_plan.md`, `walkthrough.md`, diagrams, and reports.
-- **Scratch Files**: Code snippets and temporary investigation scripts.
+- **Transcripts (`transcript.jsonl`)**: Chronological history of requests, reasoning, and tool calls.
+- **Architectural Artifacts**: Plans, walkthroughs, diagrams, and reports.
+- Query the lightweight interaction ledger:
+  ```bash
+  python3 ~/.gemini/config/skills/maintenance/skill-cultivation/scripts/harvest_sessions.py
+  ```
 
-### Lightweight Interaction Ledger
-
-To avoid scanning raw multi-megabyte transcripts repeatedly, maintain and query the lightweight interaction ledger:
-
-```bash
-python3 ~/.gemini/config/skills/maintenance/skill-cultivation/scripts/harvest_sessions.py
-```
-
-This updates `ledger.jsonl`, providing a compact index of session IDs, user intents, tools executed, and deliverables.
+### External Frontier Research with Firecrawl
+When researching new agent capabilities, architectural paradigms, or upstream API changes, use the [`firecrawl`](../../firecrawl/SKILL.md) skill:
+- **Scientific Papers**: `firecrawl research search-papers "<topic>"`
+- **GitHub Discussions & PRs**: `firecrawl research search-github "<topic>"`
+- **Upstream Documentation**: `firecrawl search` and `firecrawl scrape`
 
 ---
 
 ## 2. Pattern Mining Heuristics
 
-When reviewing harvested interactions, evaluate against three key signals:
-1. **Repeated Multi-Step Workflows (Procedural Toil)**: Frequent identical setups or pipelines across distinct sessions.
-2. **Recurring User Corrections (Behavioral Misalignment)**: Persistent developer corrections (e.g. constraints, flags, custom scripts).
-3. **Emergent Domain Stacks (New Project Primitives)**: New SDKs or architectures requiring repetitive codebase navigation.
+Evaluate potential skills against three core signals:
+1. **Repeated Multi-Step Workflows (Procedural Toil)**: Frequent identical setups across sessions.
+2. **Recurring User Corrections (Behavioral Misalignment)**: Persistent developer corrections.
+3. **Emergent Domain Stacks (New Project Primitives)**: New SDKs or external tooling patterns.
 
 ---
 
@@ -84,7 +87,7 @@ Candidate skill drafts must never be monolithic text dumps. They must be structu
 ## Deep References
 
 Load on-demand via `view_file`:
-- **[Cultivation Patterns & Mining Guide](./references/cultivation-guide.md)**: Querying the ledger, clustering algorithms, and proposal evaluation scoring.
+- **[Cultivation Patterns & Mining Guide](./references/cultivation-guide.md)**: Querying the ledger, scoring models, and Firecrawl research patterns.
 
 ---
 
