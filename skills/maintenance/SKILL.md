@@ -60,7 +60,7 @@ When performing agent maintenance, **read the relevant specialist guide on deman
 - **[Agent System Audit](./agent-audit/SKILL.md)**: Perform a full evaluation of system health, discoverability, context efficiency, link integrity, and architectural consistency across all skills and configurations.
 
 ## 2. Proving & Regression Testing
-- **[Agent Testing](./agent-testing/SKILL.md)**: Concrete scenario and regression testing suite to prove that proposed improvements actually work and prevent regressions in routing, discovery, and execution. Automated runner available at `maintenance/scripts/run_regression.py`.
+- **[Agent Testing](./agent-testing/SKILL.md)**: Concrete scenario and regression testing suite to prove that proposed improvements actually work and prevent regressions in routing, discovery, and execution.
 
 ## 3. Safe Structural Repairs
 - **[Skill Maintenance](./skill-maintenance/SKILL.md)**: Safe refactoring runbook for repairing broken routes, updating script references, reconciling paths, and enforcing the "Fix Before You Delete" principle.

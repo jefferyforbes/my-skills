@@ -12,6 +12,11 @@ Root AGENTS.md
     ├── shared/
     │   └── reusable cross-domain principles (internal progressive disclosure)
     │
+    ├── design/
+    │   ├── ui/
+    │   ├── ux/
+    │   └── system-architecture/
+    │
     ├── engineering/
     │   ├── planning/
     │   ├── execution/

@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d4b0fd8-81d5-4de4-b1ab-a6885c15f818" name="Changes" comment="Update skills">
-      <change afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/maintenance/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/maintenance/agent-testing/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/shared/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/shared/principles/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/shared/principles/learning/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/shared/principles/skill-authoring/SKILL.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skills/shared/principles/skill-system.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/agent-audit/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/agent-audit/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/air-llm-skill/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/air-llm-skill/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/android-cli/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/android-cli/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/android/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/android/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/android/references/testing/testing-setup/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/android/references/testing/testing-setup/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/android/references/ui/compose-ui/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/android/references/ui/compose-ui/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/android/references/ui/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/android/references/ui/navigation-3/references/android/guide/navigation/navigation-3/recipes/deeplinks-syntheticbackstack.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/android/references/ui/wear-compose-m3/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/android/references/ui/wear-compose-m3/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/android/references/ui/wear-compose-m3/references/components.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/android/references/ui/wear-compose-m3/references/components.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/engineering/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/engineering/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/engineering/validation/code-review/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/engineering/validation/code-review/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/engineering/validation/testing/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/engineering/validation/testing/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/koog-agent-framework/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/koog-agent-framework/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/migrate-workflows/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/migrate-workflows/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/update-ai-data/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/update-ai-data/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/use-railway/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/use-railway/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/use-railway/references/cli_guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/use-railway/references/cli_guide.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/wear-compose-m3/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/wear-compose-m3/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skills/xcode-project-setup/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/skills/xcode-project-setup/SKILL.md" afterDir="false" />
-    </list>
+    <list default="true" id="6d4b0fd8-81d5-4de4-b1ab-a6885c15f818" name="Changes" comment="Update skills" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

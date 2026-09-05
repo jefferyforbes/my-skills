@@ -26,4 +26,4 @@ Provide operational guidelines for managing Railway projects, microservices, dat
 
 # Detailed Operational Guide & CLI Reference
 
-For complete step-by-step CLI workflows, database provisioning commands, object storage configuration, and troubleshooting logs, see [references/cli_guide.md](./references/cli_guide.md).
+For complete step-by-step CLI workflows, database provisioning commands, object storage configuration, and troubleshooting logs, see [references/cli_guide.md](file:///Users/jefferyforbes/.gemini/config/skills/use-railway/references/cli_guide.md).

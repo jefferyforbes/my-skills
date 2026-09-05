@@ -1,112 +1,108 @@
 ---
 name: skill-authoring
-description: Guidance for creating and maintaining composable agent skills that minimise context cost while preserving capability.
+description: Create, extract, or refactor composable Antigravity skills from URLs, markdown files, specifications, or repeated workflows while enforcing context budgets and progressive disclosure.
 ---
 
-# Skill Authoring
+# Skill Authoring & Synthesis
 
 ## Purpose
 
-Create skills that are composable, discoverable, maintainable, and economical in context.
+This skill guides the creation, extraction, and refactoring of composable agent skills that minimize context cost while preserving deep operational capability.
 
-Skills are capabilities, not essays.
+Use this skill when asked to:
+- **"Turn this URL / markdown / document into a skill."**
+- **"Create a new skill for X."**
+- Refactor or decompose an existing monolithic skill.
 
 ---
 
-## Core Principle
+## The Core Triad of Our Skills
 
-> **Keep operational rules in the skill; defer deep knowledge to references.**
-
-Prefer:
+Every skill created, cultivated, or refactored must strictly adhere to three foundational principles:
 
 ```text
-SKILL.md
-    ↓
-What to do
-When to use it
-Decision rules
-Required verification
-    ↓
-references/
-    ↓
-Deep domain knowledge
-Examples
-API details
-Long-form guidance
+┌─────────────────────────────────────────────────────────────┐
+│                 THE CORE TRIAD OF OUR SKILLS                │
+├──────────────────────────────┬──────────────────────────────┤
+│ 1. Well-Connected            │ Explicit routing table,      │
+│    (Zero Dead Ends)          │ bidirectional parent-child   │
+│                              │ links, reachable in harness. │
+├──────────────────────────────┼──────────────────────────────┤
+│ 2. Thorough                  │ Deep domain knowledge, edge  │
+│    (No Shallow Checklists)   │ cases, and real recipes in   │
+│                              │ references/ (never lost).    │
+├──────────────────────────────┼──────────────────────────────┤
+│ 3. Precise                   │ Root router <600 words,      │
+│    (Context Economical)      │ zero fluff, actionable rules,│
+│                              │ exact verification steps.    │
+└──────────────────────────────┴──────────────────────────────┘
 ```
 
 ---
 
-## Skill Structure
+## The Router Hub & References Architecture
 
-A useful skill should answer:
+> **Keep operational rules and triggers in the root `SKILL.md`; defer deep knowledge, component catalogs, and multi-line examples to `references/`.**
 
-1. What capability does this provide?
-2. When should it be used?
-3. What must the agent understand before acting?
-4. What workflow should it follow?
-5. What decisions require judgement?
-6. How should the result be verified?
-7. What should be reported?
-
----
-
-## Avoid Duplication
-
-Do not repeat rules already defined by:
-
-- root `AGENTS.md`
-- parent skills
-- shared principles
-
-Add only the specialised behaviour required by the skill.
+```text
+skills/<skill-name>/
+├── SKILL.md            <-- Root router: purpose, triggers, decision rules, verification (<600 words)
+├── references/         <-- On-demand deep documentation (loaded via view_file when needed)
+│   ├── api-guide.md
+│   └── recipes.md
+└── scripts/            <-- Executable automation or regression scripts (optional)
+```
 
 ---
 
-## Context Budget
+## Antigravity Discovery Contract
 
-Prefer concise rules over repeated prose.
-
-Move detailed material into references when:
-
-- it is only needed for specific cases;
-- it is large;
-- it changes independently;
-- it contains examples or API documentation;
-- it is useful knowledge but not required for every invocation.
+1. **Top-Level Discovery**:
+   - Antigravity discovers active skills at exactly `~/.gemini/config/skills/<skill-name>/SKILL.md` (depth 1).
+   - Only place skills at top level if they represent distinct, independently discoverable capabilities.
+2. **Context Budget Ceiling**:
+   - The root `SKILL.md` must stay under **600 words** (strictly under 1,000 words).
+   - A skill is a capability routing tool, not an encyclopedia.
 
 ---
 
-## Composition
+## Workflow for Authoring a Skill
 
-A skill should have one clear responsibility.
+### 1. Ingestion & Analysis
+- **From URL**: Fetch content using `read_url_content`. Strip promotional fluff, navigation bars, and marketing copy.
+- **From Local Spec / Markdown**: Inspect sections using `view_file`.
+- Pinpoint:
+  - *What exact capability does this provide?*
+  - *What triggers its activation?*
+  - *What tools does it require?*
 
-If a skill repeatedly invokes another capability, consider whether it should:
-
-- reference that skill;
-- compose with that skill;
-- become a higher-level orchestration skill.
-
-Do not create a hierarchy merely for folder organisation.
+### 2. Separation of Concerns (Router Hub + References)
+- **Root `SKILL.md` (Precise & Well-Connected)**:
+  - YAML frontmatter: `name` (kebab-case) and `description` (concise trigger criteria).
+  - Clear purpose statement.
+  - Activation trigger checklist.
+  - Core behavioral constraints and decision rules.
+  - Explicit routing table to references (`references/<topic>.md`).
+  - Verification checklist.
+- **`references/` Directory (Thorough)**:
+  - Full API endpoint tables, schema mappings, extensive code templates, and migration walkthroughs.
 
 ---
 
-## Verification
+## References & Authoring Templates
 
-Every skill that changes or evaluates something should define its evidence of success.
-
-A skill must never claim work was verified when the verification was not actually performed.
+Load on-demand via `view_file`:
+- **[Skill Authoring Templates & Schemas](./references/skill-templates.md)**: Standard markdown scaffolds for root routers, references, and tool definitions.
 
 ---
 
-## Evolution
+## Verification & Change Gate Checklist
 
-When changing a skill:
-
-- preserve useful existing behaviour;
-- identify contradictions before resolving them;
-- remove duplication carefully;
-- prefer consolidation over deletion when capability can be preserved;
-- update activation criteria when the skill's responsibility changes.
-
-Treat skills as software modules: cohesive, loosely coupled, and independently understandable.
+Before considering any newly authored skill complete:
+- [ ] **Well-Connected**: Relative markdown links resolve cleanly (`[Title](./references/guide.md)`).
+- [ ] **Precise**: Root `SKILL.md` is strictly within the context budget (`wc -w SKILL.md` < 600).
+- [ ] **Thorough**: Complex concepts have dedicated reference files under `references/`.
+- [ ] **Portable**: No machine-specific hardcoded absolute paths (`/Users/...`).
+- [ ] **Executable**: Referenced scripts have executable permissions (`chmod +x`).
+- [ ] **Change Gate**: Pass regression suite: `python3 ~/.gemini/config/skills/maintenance/scripts/run_regression.py`.
+- [ ] **Sync**: Offer to synchronize to external backup via `update-ai-data`.

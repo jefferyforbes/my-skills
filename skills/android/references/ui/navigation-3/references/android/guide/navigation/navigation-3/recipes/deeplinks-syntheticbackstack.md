@@ -93,7 +93,7 @@ internal const val ADVANCED_PATH_BASE = "https://www.nav3deeplink.com"
  * the SyntheticBackStackAppActivity that you deeplink into. That module shows you how to build a synthetic backStack
  * and how to manage the Task stack properly in order to support both Back and Up buttons.
  *
- * See the [Navigation 3 Documentation](../index.md) file of current module for more info on advanced deep linking.
+ * See the [README](README.md) file of current module for more info on advanced deep linking.
  */
 class SyntheticBackStackDeepLinkActivity: ComponentActivity() {
 

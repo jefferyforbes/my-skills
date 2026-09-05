@@ -116,16 +116,3 @@ When a change is proposed by `agent-audit`:
 4. **Evaluate Gate**:
    - Passed if all previously passing tests still pass AND the target defect is resolved.
    - Rejected if any new failure or regression is introduced.
-
-
----
-
-# Automated Regression Runner
-
-The complete test suite is packaged as an automated, executable regression runner:
-
-```bash
-python3 ~/.gemini/config/skills/maintenance/scripts/run_regression.py
-```
-
-Run this script before and after any proposed system modification to enforce the **Formal Maintenance Change Gate**.

@@ -8,7 +8,7 @@ compatibility: Requires Swift to be installed locally and macOS environment.
 
 ## ⛔️ CRITICAL RULES & ENVIRONMENT CHECKS
 
-Before performing any Xcode setup or file manipulation, you **MUST** adhere to the following rules. Failure to follow these constraints may result in project corruption or linker failures.
+Before performing any Xcode setup or file manipulation, you **MUST** adhere to the following rules. A hefty fee will be applied if you violate them.
 
 ### 1. The Anti-Ruby Mandate
 You are **strictly forbidden** from using Ruby, Rails, or any Ruby gems (including the `xcodeproj` gem). Under no circumstances may you write or execute Ruby scripts.

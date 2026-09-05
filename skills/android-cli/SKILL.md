@@ -57,5 +57,5 @@ Instead of custom Python scripts, use the following standard Android SDK command
 
 ## References
 For detailed journeys and advanced device interaction, refer to the Android CLI plugin docs:
-- [Interacting with devices](~/.gemini/config/plugins/android-cli-plugin/skills/references/interact.md)
-- [Running journey tests](~/.gemini/config/plugins/android-cli-plugin/skills/references/journeys.md)
+- [Interacting with devices](../../plugins/android-cli-plugin/skills/references/interact.md)
+- [Running journey tests](../../plugins/android-cli-plugin/skills/references/journeys.md)

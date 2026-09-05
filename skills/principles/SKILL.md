@@ -21,7 +21,7 @@ Use `view_file` on the relative paths below to inspect the appropriate principle
 - **[Skill System Architecture](./skill-system.md)**: Layered ownership model, the Host Harness Discovery Contract, and the capability hierarchy (`Discoverable Skill -> Routed Workflow -> Reference`).
 
 ## 2. Skill Authoring & Context Discipline
-- **[Skill Authoring Guidelines](./skill-authoring/SKILL.md)**: Rules for creating composable, maintainable skills, managing context budgets, and moving bulky knowledge into references.
+- **[Skill Authoring Guidelines](../../skill-authoring/SKILL.md)**: Rules for creating composable, maintainable skills, managing context budgets, and moving bulky knowledge into references. (Promoted to top-level discoverable skill).
 
 ## 3. Principles & Learning Workflow
 - **[Learning & Decision Narration](./learning/SKILL.md)**: Guidelines for explaining non-obvious engineering decisions, trade-offs, and educational insights without narrating mechanical keystrokes.
